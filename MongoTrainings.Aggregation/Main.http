@@ -1,0 +1,8 @@
+### Fill the DB
+GET http://localhost:5093/fill-database/1000
+
+### Get companies
+GET http://localhost:5093/get-companies
+
+### CLean collections
+GET http://localhost:5093/clean-collections

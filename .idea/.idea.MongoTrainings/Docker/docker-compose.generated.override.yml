@@ -1,0 +1,19 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  aggregation-service:
+    build:
+      context: "C:\\Users\\guteh\\RiderProjects\\MongoTrainings"
+      dockerfile: "./MongoTrainings.Aggregation/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/MongoTrainings.Aggregation.dll"
+    environment: {}
+    image: "mongotrainings.aggregation:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\guteh\\AppData\\Roaming\\ASP.NET\\Https:/root/.aspnet/https"
+    - "C:\\Users\\guteh\\AppData\\Roaming\\Microsoft\\UserSecrets:/root/.microsoft/usersecrets"
+    - "C:\\Users\\guteh\\RiderProjects\\MongoTrainings\\MongoTrainings.Aggregation:/app:rw"
+    working_dir: "/app"

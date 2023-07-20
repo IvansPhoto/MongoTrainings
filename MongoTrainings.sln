@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoTrainings.Aggregation", "MongoTrainings.Aggregation\MongoTrainings.Aggregation.csproj", "{BA06C63E-26E4-4CA5-91CA-365458A50689}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{E4DE5CB8-961E-4DE1-9A7A-B9286D911FFC}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA06C63E-26E4-4CA5-91CA-365458A50689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA06C63E-26E4-4CA5-91CA-365458A50689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA06C63E-26E4-4CA5-91CA-365458A50689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA06C63E-26E4-4CA5-91CA-365458A50689}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
