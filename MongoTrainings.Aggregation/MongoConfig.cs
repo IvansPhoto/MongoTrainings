@@ -16,6 +16,7 @@ namespace MongoTrainings.Aggregation
 
         public const string CompanyCollection = "Companies";
         public const string SiteCollection = "Sites";
+        public const string EmployeeCollection = "Employees";
 
         public MongoUrl GetMongoConnectionString() =>
             new MongoUrlBuilder(BaseUrl ?? throw new Exception(ExceptionMessage))

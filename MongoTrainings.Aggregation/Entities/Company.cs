@@ -1,4 +1,5 @@
 using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace MongoTrainings.Aggregation.Entities;
 
@@ -11,10 +12,13 @@ public abstract record CompanyBase
 
 public record Company : CompanyBase
 {
-    public IEnumerable<ObjectId> Sites { get; set; }
+    public ObjectId HqSiteId { get; set; } = ObjectId.Empty;
+    public IEnumerable<ObjectId> SiteIds { get; set; } = ArraySegment<ObjectId>.Empty;
 }
 
+[BsonIgnoreExtraElements] 
 public record CompanyDto : CompanyBase
 {
-    public IEnumerable<Site> Sites { get; set; }
+    public SiteDto HqSite { get; set; }
+    public IEnumerable<SiteDto> Sites { get; set; }
 }
